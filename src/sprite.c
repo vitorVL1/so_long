@@ -24,15 +24,15 @@ int	open_image(t_window *window)
 	x = PX;
 	y = PX;
 	sprite_type->wall = mlx_xpm_file_to_image(window->mlx_begin,
-			"./textures/bushes_64x64-overlay.xpm", &x, &y);
+			"./textures/fence.xpm", &x, &y);
 	sprite_type->player = mlx_xpm_file_to_image(window->mlx_begin,
-			"./textures/dog_64x64-overlay.xpm", &x, &y);
+			"./textures/cheff.xpm", &x, &y);
 	sprite_type->exit = mlx_xpm_file_to_image(window->mlx_begin,
-			"./textures/doghouse_64x64-overlay.xpm", &x, &y);
+			"./textures/grill.xpm", &x, &y);
 	sprite_type->collectible = mlx_xpm_file_to_image(window->mlx_begin,
-			"./textures/bone_64x64-overlay.xpm", &x, &y);
+			"./textures/meat.xpm", &x, &y);
 	sprite_type->path = mlx_xpm_file_to_image(window->mlx_begin,
-			"./textures/dirt_path_64x64.xpm", &x, &y);
+			"./textures/grass.xpm", &x, &y);
 	window->sprite = sprite_type;
 	return (1);
 }
