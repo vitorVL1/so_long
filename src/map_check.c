@@ -111,8 +111,6 @@ int	map_is_rectangular(char **map, t_map *map_set)
 			return (0);
 		i++;
 	}
-	/* if (i < 3)
-		return (0); */
 	map_set->map_is_rectangular = 1;
 	return (1);
 }

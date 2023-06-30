@@ -18,7 +18,7 @@ static int	start_game(t_window *window)
 	if (!window->mlx_begin)
 		return (free_mlx(window));
 	window->mlx_window = mlx_new_window(window->mlx_begin, (window->map->x - 1)
-			* PX, window->map->y * PX, "BBQ_cheff");
+			* PX, window->map->y * PX, "so_long");
 	if (!window->mlx_window)
 		return (free_mlx(window));
 	if (!open_image(window))
